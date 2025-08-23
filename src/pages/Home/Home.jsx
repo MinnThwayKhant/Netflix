@@ -4,6 +4,9 @@ import hero_banner from '../../assets/hero_banner.jpg'
 import hero_title from '../../assets/hero_title.png'
 import play_icon from '../../assets/play_icon.png'
 import info_icon from '../../assets/info_icon.png'
+import { TitleCard } from '../../components/TitleCard/TitleCard'
+import { Footer } from '../../components/Footer/Footer'
+
 
 export const Home = () => {
   return (
@@ -19,7 +22,18 @@ export const Home = () => {
 
                     <button className='border-0 outline-none inline-flex px-5 gap-2 items-center h-11 text-[16px] bg-[#6d6d6eb3] cursor-pointer rounded font-semibold hover:opacity-80'><img src={info_icon} alt="icons" className='w-6' />More Info</button>
                 </div>
+                <TitleCard />
             </div>
+        </div>
+        <div className='py-8 px-20'>
+          <TitleCard title={"Blockbuster Movies"} />
+          <TitleCard title={"Only on Netflix"} />
+          <TitleCard title={"Upcoming"} />
+          <TitleCard title={"Top Pics For You"} />
+        </div>
+
+        <div>
+          <Footer />
         </div>
     </div>
   )
